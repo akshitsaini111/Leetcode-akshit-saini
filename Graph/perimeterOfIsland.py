@@ -33,5 +33,4 @@ grid = [
 
 sol=Solution()
 
-print(sol.perimeter(grid=grid))
-        
+print(sol.perimeter(grid=grid))                        print(sol.perimeter(grid=grid))      
