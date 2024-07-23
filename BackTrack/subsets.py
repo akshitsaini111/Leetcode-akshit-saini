@@ -21,4 +21,5 @@ sol = Solution()
 print("Answer is", sol.subSets(arr))
 
 
-# arr=[1,2,3]
+# arr=[1,2,3] trying to merge two branches
+# lets check
