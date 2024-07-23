@@ -1,7 +1,6 @@
 class Solution:
 
     def subSets(self, arr):
-        n = len(arr)
         res = []
 
         def dfs(i, sub):
