@@ -43,4 +43,6 @@ def print_list(node):
 
 
 # Print the sorted linked list
+
+
 print_list(sorted_head)  # Output: 1 -> 2 -> 3 -> 4 -> None
