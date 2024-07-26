@@ -8,34 +8,19 @@ class ListNode(object):
 class Solution(object):
 
     def insertionSortList(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
-        # If the list is empty or has only one node, it is already sorted
         if not head or not head.next:
             return head
 
-        # Create a dummy node which acts as the new head of the sorted part of the list
         dummy = ListNode(0)
         curr = head
-
-        # Traverse the original list
         while curr:
-            # At each iteration, we insert curr into the correct position in the sorted part of the list
             prev = dummy
 
-            # Find the correct position to insert curr
             while prev.next and curr.val >= prev.next.val:
                 prev = prev.next
 
-            # Insert curr into the sorted part
-            next_node = curr.next  # Store the next node to process after insertion
-            curr.next = prev.next  # Insert curr after prev
-            prev.next = curr  # Update prev.next to point to curr
-            curr = next_node  # Move to the next node in the original list
-
-        return dummy.next  # The sorted list starts after the dummy node
+            curr.next, prev.next, curr = prev.next, curr, curr.next
+        return dummy.next
 
 
 # Example usage:
