@@ -6,5 +6,5 @@
 
 class TicTac:
 
-    def __init__(self) -> None:
-        pass
+    def __init__(self):
+        self.board = [[" " for _ in range(3)] for __ in range(3)]
