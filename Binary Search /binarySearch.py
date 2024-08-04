@@ -11,3 +11,4 @@ class Solution:
                 s = mid + 1
             else:
                 return mid
+        return -1
