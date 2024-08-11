@@ -9,7 +9,7 @@ class Solution:
                 return safe[i]
             safe[i] = False
             for nei in graph[i]:
-                if dfs(i) == False:
+                if dfs(nei) == False:
                     return False
             safe[i] = True
             return True
