@@ -11,7 +11,7 @@ class Solution:
                 return False
             visiting.add(j)
             for nei in adj[j]:
-                if dfs(j):
+                if dfs(nei):
                     return True
             visited.add(j)
             visiting.remove(j)
