@@ -10,7 +10,7 @@ class Solution:
 
     def insert(self, root, val):
         if not root:
-            return
+            return node(val)
         if val > root.val:
             root.right = self.insert(root.right, val)
         if val < root.val:
