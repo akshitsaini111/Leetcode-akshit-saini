@@ -6,6 +6,6 @@ class Solution:
             if (r - l + 1) == len(s1):
                 if sorted(s1) == sorted(s2[l : r + 1]):
                     return True
-            else:
-                l += 1
+                else:
+                    l += 1
         return False
