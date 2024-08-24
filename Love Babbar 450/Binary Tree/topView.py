@@ -26,5 +26,5 @@ class Solution:
                 q.append([node.right, hd + 1])
 
         sk = sorted(tv.keys())
-        res = [tv[hd] for hd in sk]
+        res = [tv[hd].val for hd in sk]
         return res
