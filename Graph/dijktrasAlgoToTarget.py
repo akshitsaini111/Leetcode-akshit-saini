@@ -13,13 +13,15 @@ class Solution:
 
         while minHeap:
             w1, n1 = heapq.heappop(minHeap)
-            if n1 in short:
-                continue
-            short[n1] = w1
 
             if n1 == target:
                 print(w1)
                 break
+
+            if n1 in short:
+                continue
+            short[n1] = w1
+
             for n2, w2 in adj[n1]:
                 if n2 in short:
                     continue
